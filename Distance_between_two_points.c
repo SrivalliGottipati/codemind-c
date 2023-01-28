@@ -7,5 +7,4 @@ int main()
     float x;
     x=sqrt((a-c)*(a-c)+(b-d)*(b-d));
     printf("%0.4f",x);
-    
 }
