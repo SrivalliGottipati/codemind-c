@@ -6,5 +6,4 @@ int main()
     int a;
     a=(3*x)-(y+z);
     printf("%d",a);
-    
 }
