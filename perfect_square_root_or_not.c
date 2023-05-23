@@ -1,17 +1,22 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-    int n;
+    int i,n,flag=0;
     scanf("%d",&n);
-    int a=sqrt(n);
-    if(a*a==n)
+    if(n==1||n==0)
     {
-        printf("True");
-        }
-        else
+        printf("%d is a perfect square",n);
+        flag=1;
+    }
+    for(i=2;i<=n/2;i++)
+    {
+        if(n==i*i)
         {
-            printf("False");
-            }
-    
+            printf("True");
+            flag=1;
+            break;
+        }
+    }
+    if(flag==0)
+    printf("False");
 }
